@@ -66,3 +66,16 @@ button:hover {
         transform: translateX(30px);
     }
 }
+
+@media (max-width: 768px) {
+    #easterEgg {
+        display: block !important;  /* Force it to show */
+        text-align: center;
+        font-size: 1.2em;  /* Make sure the font size is readable */
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.7); /* Optional: Make it stand out a bit */
+        border-radius: 10px; /* Optional: Round the corners for a nice touch */
+    }
+}
+
