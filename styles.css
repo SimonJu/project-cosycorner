@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(to bottom, #ffe0f0, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6f91;
+}
+
+p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff3b6f;
+}
+
+#hugEmoji {
+    font-size: 100px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    margin-top: 30px;
+}
+
+/* Floating hearts */
+.hearts::before, .hearts::after {
+    content: "💖 💗 💖 💗 💖 💗";
+    position: fixed;
+    width: 100%;
+    font-size: 30px;
+    animation: floatHearts 10s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes floatHearts {
+    0% {
+        top: 100%;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        top: -10%;
+        transform: translateX(30px);
+    }
+}
