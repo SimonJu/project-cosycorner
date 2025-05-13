@@ -67,15 +67,30 @@ button:hover {
     }
 }
 
+/* Default styling for the easter egg (hidden by default) */
+#easterEgg {
+    display: none; /* Keep it hidden by default */
+    font-size: 1.4em;
+    color: #ff3b6f;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    z-index: 1000; /* Ensure it’s on top */
+}
+
+/* Mobile-specific styling */
 @media (max-width: 768px) {
     #easterEgg {
-        display: block !important;  /* Force it to show */
-        text-align: center;
-        font-size: 1.2em;  /* Make sure the font size is readable */
+        display: block !important;  /* Ensure it’s visible on mobile */
+        font-size: 1.2em;
         margin-top: 20px;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.7); /* Optional: Make it stand out a bit */
         border-radius: 10px; /* Optional: Round the corners for a nice touch */
+        z-index: 1000; /* Make sure it's visible above other elements */
     }
 }
+
 
