@@ -27,9 +27,8 @@ function generateCompliment() {
     document.getElementById("complimentText").textContent = compliments[randomIndex];
 }
 
-// Easter egg reveal on double-click background
-document.body.ondblclick = function() {
+document.body.addEventListener("click", function() {
     const egg = document.getElementById("easterEgg");
     egg.style.display = "block";
-}
+});
 
